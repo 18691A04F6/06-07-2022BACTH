@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Pseudo selectors</title>
+		<style type="text/css">
+		    .parentdiv div:first-child{
+		    	background-color: brown;
+		    	padding: 10px;
+		    	margin: 10px;
+		    }
+
+
+            .parentdiv div:last-child{
+		    	background-color: blue;
+		    	padding: 10px;
+		    	margin: 10px;
+		    }
+
+		    .parentdiv div:nth-child(2n+1){
+		    	background-color: green;
+		    	padding: 10px;
+		    	margin: 10px;
+		    }
+		    a:link{
+		    	color: forestgreen;
+		    }
+
+		</style>
+	</head>
+	<body>
+		<!--
+			pseudo selector - it allows developer to style the element with its state inside DOM.
+			  -Pseudo class selctor(state:state of the element)
+			     - first-child
+			     - last-child
+			     - nth-child()(odd/)
+			     - nth-child()(odd/2n+1)(even/2n)
+			  - anchor
+			     - link
+			     - visited
+			     - hover
+			     - focus
+
+			  -Pseudo element selector(state::state of the element)
+		-->
+
+	    <h2>Pseudo selector</h2>
+	    <div class="parentdiv">
+	    	<div>HTML</div>
+            <div>CSS</div>
+            <div>JAVASCRIPT</div>
+            <div>BOOTSTRAP</div>
+            <div>REACTJS</div>
+        </div>
+        <a href="#">this is a link</a>
+    </body>
+</html>

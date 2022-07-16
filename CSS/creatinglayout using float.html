@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>creating layout using float</title>
+		<style type="text/css">
+			.parentdiv{
+				border: 1px solid red;
+				padding: 10px;
+				float: left;
+				width: 50%;
+			}
+		     .childdiv{
+		     	height: 50px;
+		     	/*width: 32%;*/
+		     	margin: 20px;
+		     }
+		     .div1{
+		     	background-color: orange;
+		     	float: left;
+		     	width: 32%;
+		     }
+		     .div2{
+		     	background-color: violet;
+		     	float: left;
+		     	width: 32%;
+
+		     }
+             .div3{
+		     	background-color: green;
+		     	float: left;
+		     	width: 32%;
+		     }
+		</style>
+	</head>
+	<body>
+		<!--
+			layouts
+			    - float
+			    - flexbox
+			    - grid
+		-->
+
+		<div class="parentdiv">
+		    <div class="div1 childdiv">div1</div>
+		    <div class="div2 childdiv">div2</div>
+            <div class="div3 childdiv">div3</div>
+        </div>
+    </body>
+</html>
